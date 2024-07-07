@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'avaliacao-angular-minsait';
+
+  exibirAlerta(has: string) {
+    alert(`O palmeirast ${has} mundial`);
+  }
 }
