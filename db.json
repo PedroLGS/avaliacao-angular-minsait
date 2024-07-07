@@ -1,0 +1,34 @@
+{
+    "profiles": [
+        {
+            "id": 1,
+            "name": "Alice",
+            "role": "admin",
+            "age": 32,
+            "email": "alice@example.com",
+            "isActive": true,
+            "country": "USA",
+            "experience": "Senior"
+        },
+        {
+            "id": 2,
+            "name": "Bob",
+            "role": "user",
+            "age": 28,
+            "email": "bob@example.com",
+            "isActive": false,
+            "country": "Canada",
+            "experience": "Junior"
+        },
+        {
+            "id": 3,
+            "name": "Charlie",
+            "role": "moderator",
+            "age": 35,
+            "email": "charlie@example.com",
+            "isActive": true,
+            "country": "UK",
+            "experience": "Mid-level"
+        }
+    ]
+}
