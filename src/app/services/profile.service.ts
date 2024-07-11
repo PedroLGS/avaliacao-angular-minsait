@@ -23,11 +23,11 @@ export class ProfileService {
     return this.http.put<IProfile>(`${this.api}/${profile.id}`, profile);
   }
 
-  excluir(id: number) {
+  excluir(id: string) {
     return this.http.delete(`${this.api}/${id}`);
   }
 
-  buscarPorId(id: number) {
+  buscarPorId(id: string) {
     return this.http.get<IProfile>(`${this.api}/${id}`)
   }
 }

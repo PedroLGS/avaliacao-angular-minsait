@@ -24,12 +24,12 @@ export class ProfileCreateUpdateComponent {
     experience : new FormControl('', Validators.maxLength(50))
   });
 
-  id: number | undefined
+  id: string | undefined;
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
-      this.id = Number(id);
+      this.id = id;
       this.profileService.buscarPorId(this.id).subscribe(profile => {
         this.profileForm.patchValue(profile);
       });

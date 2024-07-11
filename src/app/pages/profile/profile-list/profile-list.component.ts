@@ -21,7 +21,7 @@ export class ProfileListComponent {
     });
   }
 
-  excluir(id: number) {
+  excluir(id: string) {
     Swal.fire({
       title: 'Tem certeza que deseja excluir o perfil?',
       text: 'Não será possível reverter!',
