@@ -24,43 +24,41 @@ export class ProfileCreateUpdateComponent {
     experience : new FormControl('', Validators.maxLength(50))
   });
 
-  ngOnInit() {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) {
-      this.profileService.buscarPorId(+id).subscribe(profile => {
-        this.profileForm.setValue(profile);
-      });
-    }
-  }
+  id: number | undefined
 
   onSubmit() {
-    const profile: IProfile = this.profileForm.value as IProfile;
-    if (profile.id) {
-      this.editar(profile);
-    } else {
-      this.cadastrar(profile);
+    const id = this.route.snapshot.paramMap.get('id');
+    if (id) {
+      this.id = Number(id);
+      this.profileService.buscarPorId(this.id).subscribe(profile => {
+        this.profileForm.patchValue;
+      });
     }
+    
   }
 
-  cadastrar(profile: IProfile) {
-    this.profileService.cadastrar(profile).subscribe(result => {
-      Swal.fire({
-        title: 'Pessoa cadastrada com sucesso!',
-        text: 'Cadastrada!',
-        icon: 'success',
+  cadastrarEditarProfile() {
+    const profile: IProfile = this.profileForm.value as IProfile;
+
+    if (this.id) {
+      profile.id = this.id;
+      this.profileService.editar(profile).subscribe((result: IProfile) => {
+        Swal.fire({
+          title: 'Sucesso!',
+          text: 'Perfil editado com sucesso!',
+          icon: 'success',
+        });
+        this.router.navigateByUrl('/profile');
       });
-      this.router.navigateByUrl('/profile');
-    });
-  }
-  
-  editar(profile: IProfile) {
-    this.profileService.editar(profile).subscribe(result => {
-      Swal.fire({
-        title: 'Pessoa atualizada com sucesso!',
-        text: 'Atualizada!',
-        icon: 'success',
+    } else {
+      this.profileService.cadastrar(profile).subscribe((result: IProfile) => {
+        Swal.fire({
+          title: 'Sucesso!',
+          text: 'Perfil cadastrado com sucesso!',
+          icon: 'success',
+        });
+        this.router.navigateByUrl('/profile');
       });
-      this.router.navigateByUrl('/profile');
-    });
+    }
   }
 }

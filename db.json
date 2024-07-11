@@ -39,6 +39,16 @@
       "isActive": true,
       "country": "Brasil",
       "experience": "Junior"
+    },
+    {
+      "id": "0d69",
+      "name": "Pedro Luiz Gomes Sampaio",
+      "role": "Admin",
+      "age": 21,
+      "email": "pedroluizgs1311@gmail.com",
+      "isActive": true,
+      "country": "Argentina",
+      "experience": "Senior"
     }
   ]
 }

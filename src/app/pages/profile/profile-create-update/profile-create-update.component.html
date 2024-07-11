@@ -1,5 +1,5 @@
 <div class="container">
-    <form (ngSubmit)="onSubmit()" [formGroup]="profileForm">
+    <form (ngSubmit)="cadastrarEditarProfile()" [formGroup]="profileForm">
       <div class="mb-3">
         <label for="name" class="form-label">Nome</label>
         <input type="text" class="form-control" id="name" formControlName="name" name="name">
@@ -28,7 +28,7 @@
         <label for="experience" class="form-label">Experiência</label>
         <input type="text" class="form-control" id="experience" formControlName="experience">
       </div>
-      <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">{{ profileForm.get('id')?.value ? 'Atualizar' : 'Cadastrar' }}</button>
+      <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">{{id ? 'Editar' : 'Cadastrar'}}</button>
     </form>
   </div>
 
