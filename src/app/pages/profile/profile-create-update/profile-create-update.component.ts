@@ -26,15 +26,14 @@ export class ProfileCreateUpdateComponent {
 
   id: number | undefined
 
-  onSubmit() {
+  ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
       this.id = Number(id);
       this.profileService.buscarPorId(this.id).subscribe(profile => {
-        this.profileForm.patchValue;
+        this.profileForm.patchValue(profile);
       });
     }
-    
   }
 
   cadastrarEditarProfile() {
