@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { MenuItem } from 'src/app/interfaces/menu-item';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
 
-  @Input() items: any[] = [];
+  @Input() items: MenuItem[] = [];
 
 }

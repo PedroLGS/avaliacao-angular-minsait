@@ -28,7 +28,7 @@
         <label for="experience" class="form-label">Experiência</label>
         <input type="text" class="form-control" id="experience" formControlName="experience">
       </div>
-      <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">Cadastrar</button>
+      <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">{{ profileForm.get('id')?.value ? 'Atualizar' : 'Cadastrar' }}</button>
     </form>
   </div>
 

@@ -26,9 +26,9 @@
             <td>{{ profile.country }}</td>
             <td>{{ profile.experience }}</td>
             <td>
-              <a class="btn btn-primary btn-sm" routerLink="/profile/edit/{{profile.id}}">Editar</a>
+              <a class="btn btn-primary btn-sm" [routerLink]="['/profile/edit', profile.id]">Editar</a>
 
-              <a class="btn btn-primary btn-sm">Excluir</a>
+              <a (click)="excluir(profile.id)" class="btn btn-primary btn-sm">Excluir</a>
             </td>
           </tr>
         </tbody>
