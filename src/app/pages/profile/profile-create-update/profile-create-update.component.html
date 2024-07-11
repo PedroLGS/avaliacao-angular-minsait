@@ -29,6 +29,6 @@
         <input type="text" class="form-control" id="experience" formControlName="experience">
       </div>
       <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">{{id ? 'Editar' : 'Cadastrar'}}</button>
+      <button type="button" class="btn btn-secondary" (click)="cancelar()">Cancelar</button>
     </form>
   </div>
-

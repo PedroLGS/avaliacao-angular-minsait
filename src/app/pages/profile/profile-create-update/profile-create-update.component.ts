@@ -60,4 +60,8 @@ export class ProfileCreateUpdateComponent {
       });
     }
   }
+
+  cancelar() {
+    this.router.navigateByUrl('/profile')
+  }
 }

@@ -29,16 +29,6 @@
       "country": "UK",
       "experience": "Mid-level",
       "id": "3"
-    },
-    {
-      "id": "4",
-      "name": "Bob",
-      "role": "CEO",
-      "age": 57,
-      "email": "bob@teste.com",
-      "isActive": true,
-      "country": "Brasil",
-      "experience": "Senior"
     }
   ]
 }

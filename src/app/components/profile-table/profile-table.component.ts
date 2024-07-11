@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { IProfile } from 'src/app/interfaces/profile';
 
 @Component({
   selector: 'app-profile-table',
@@ -7,6 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ProfileTableComponent {
 
-  //@Input() profile: Profile[] = [];
+  @Input() profile: IProfile[] = [];
 
 }
