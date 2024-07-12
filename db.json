@@ -21,14 +21,14 @@
       "id": "2"
     },
     {
-      "name": "Charlie",
-      "role": "moderator",
-      "age": 30,
-      "email": "charlie@example.com",
+      "id": "8a6d",
+      "name": "Pedro Luiz Gomes Sampaio",
+      "role": "Admin",
+      "age": 21,
+      "email": "pedroluizgs1311@gmail.com",
       "isActive": true,
-      "country": "UK",
-      "experience": "Mid-level",
-      "id": "3"
+      "country": "Brasil",
+      "experience": "Junior"
     }
   ]
 }

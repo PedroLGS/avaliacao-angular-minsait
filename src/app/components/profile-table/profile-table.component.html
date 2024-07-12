@@ -1,1 +1,31 @@
-<p>profile-table works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Perfil</th>
+        <th scope="col">Idade</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Ativo</th>
+        <th scope="col">País</th>
+        <th scope="col">Nível de Experiência</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let profile of profiles">
+        <th scope="row">{{ profile.id }}</th>
+        <td>{{ profile.name }}</td>
+        <td>{{ profile.role }}</td>
+        <td>{{ profile.age }}</td>
+        <td>{{ profile.email }}</td>
+        <td>{{ profile.isActive }}</td>
+        <td>{{ profile.country }}</td>
+        <td>{{ profile.experience }}</td>
+        <td>
+          <a class="btn btn-primary btn-sm" [routerLink]="'/profile/edit/' + profile.id">Editar</a>
+          <a (click)="excluir(profile.id)" class="btn btn-primary btn-sm">Excluir</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
