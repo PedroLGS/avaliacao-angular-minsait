@@ -43,8 +43,8 @@ export class ProfileCreateUpdateComponent {
       profile.id = this.id;
       this.profileService.editar(profile).subscribe((result: IProfile) => {
         Swal.fire({
-          title: 'Sucesso!',
-          text: 'Perfil editado com sucesso!',
+          title: 'Pessoa editada com sucesso!',
+          text: 'Concluído!',
           icon: 'success',
         });
         this.router.navigateByUrl('/profile');
@@ -52,8 +52,8 @@ export class ProfileCreateUpdateComponent {
     } else {
       this.profileService.cadastrar(profile).subscribe((result: IProfile) => {
         Swal.fire({
-          title: 'Sucesso!',
-          text: 'Perfil cadastrado com sucesso!',
+          title: 'Pessoa cadastrada com sucesso!',
+          text: 'Concluído!',
           icon: 'success',
         });
         this.router.navigateByUrl('/profile');
