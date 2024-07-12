@@ -1,5 +1,5 @@
-<table class="table">
-    <thead>
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark"> 
       <tr>
         <th scope="col">#</th>
         <th scope="col">Nome</th>
@@ -24,7 +24,8 @@
         <td>{{ profile.experience }}</td>
         <td>
           <a class="btn btn-primary btn-sm" [routerLink]="'/profile/edit/' + profile.id">Editar</a>
-          <a (click)="excluir(profile.id)" class="btn btn-primary btn-sm">Excluir</a>
+          &nbsp;
+          <a (click)="excluir(profile.id)" class="btn btn-danger btn-sm">Excluir</a>
         </td>
       </tr>
     </tbody>
