@@ -11,16 +11,6 @@
       "experience": "Senior"
     },
     {
-      "name": "Teste",
-      "role": "tester",
-      "age": 45,
-      "email": "teste@teste.com",
-      "isActive": false,
-      "country": "Brasil",
-      "experience": "Junior",
-      "id": "8a2e"
-    },
-    {
       "id": "043a",
       "name": "Alex",
       "role": "Developer",
@@ -31,14 +21,14 @@
       "experience": "Senior"
     },
     {
-      "id": "564b",
-      "name": "Billy",
-      "role": "CEO",
-      "age": 55,
-      "email": "billy@teste.com",
+      "id": "a5ca",
+      "name": "Lucas",
+      "role": "Engenheiro de Software",
+      "age": 27,
+      "email": "lucas@teste.com",
       "isActive": true,
-      "country": "Espanha",
-      "experience": "Senior"
+      "country": "Brasil",
+      "experience": "Pleno"
     }
   ]
 }
