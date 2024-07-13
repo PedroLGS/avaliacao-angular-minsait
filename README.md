@@ -1,27 +1,26 @@
-# AvaliacaoAngularMinsait
+# Avaliação Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+O objetivo deste teste é avaliar suas habilidades no desenvolvimento de aplicativos web usando o framework Angular. Você está desafiado a criar uma aplicação Angular que permite listar, cadastrar, editar e excluir Pessoas.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 💻 Tecnologias Utilizadas
 
-## Code scaffolding
+**Angular:** 16.2.14
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Bootstrap:** 5.3.2
 
-## Build
+**@PopperJS:** 2.11.8
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Sweetalert:** 11.12.2
 
-## Running unit tests
+**IDE:** StackBlitz
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## ✍️ Autor
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [@Pedro Luiz Gomes Sampaio](https://github.com/PedroLGS)
 
-## Further help
+## 🤝 Agradecimentos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Agradeço ao [@Rafael Ferreira](https://github.com/rafaelblink) pelas aulas ministradas de Angular.
+
