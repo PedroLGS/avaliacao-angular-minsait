@@ -20,7 +20,9 @@ export class ProfileTableComponent {
       icon: 'warning',
       showCancelButton: true,
       confirmButtonText: 'Sim, exclua!',
-      cancelButtonText: 'Não, cancele!'
+      cancelButtonText: 'Não, cancele!',
+      confirmButtonColor: '#d33', 
+      cancelButtonColor: '#3085d6' 
     }).then((result) => {
       if (result.isConfirmed) {
         this.profileService.excluir(id).subscribe(() => {
