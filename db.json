@@ -29,6 +29,26 @@
       "isActive": true,
       "country": "Brasil",
       "experience": "Pleno"
+    },
+    {
+      "id": "c1a5",
+      "name": "Pedro Luiz Gomes Sampaio",
+      "role": "Admin",
+      "age": 21,
+      "email": "pedro@teste.com",
+      "isActive": true,
+      "country": "Brasil",
+      "experience": "Trainee"
+    },
+    {
+      "id": "178a",
+      "name": "Luiz",
+      "role": "Designer",
+      "age": 32,
+      "email": "luiz@teste.com",
+      "isActive": false,
+      "country": "França",
+      "experience": "Senior"
     }
   ]
 }
