@@ -3,18 +3,35 @@
     <div class="mb-3">
       <label for="name" class="form-label">Nome</label>
       <input type="text" class="form-control" id="name" formControlName="name" name="name" required>
+      <div *ngIf="profileForm.get('name')?.invalid && (profileForm.get('name')?.dirty || profileForm.get('name')?.touched)">
+        <div *ngIf="profileForm.get('name')?.errors?.['required']" class="text-danger">Nome é obrigatório.</div>
+        <div *ngIf="profileForm.get('name')?.hasError('maxlength')" class="text-danger">Excedeu o limite de caracteres.</div>
+      </div>
     </div>
     <div class="mb-3">
       <label for="role" class="form-label">Perfil</label>
       <input type="text" class="form-control" id="role" formControlName="role" required>
+      <div *ngIf="profileForm.get('role')?.invalid && (profileForm.get('role')?.dirty || profileForm.get('role')?.touched)">
+        <div *ngIf="profileForm.get('role')?.errors?.['required']" class="text-danger">Perfil é obrigatório.</div>
+        <div *ngIf="profileForm.get('role')?.hasError('maxlength')" class="text-danger">Excedeu o limite de caracteres.</div>
+      </div>
     </div>
     <div class="mb-3">
       <label for="age" class="form-label">Idade</label>
       <input type="number" class="form-control" id="age" formControlName="age" required>
+      <div *ngIf="profileForm.get('age')?.invalid && (profileForm.get('age')?.dirty || profileForm.get('age')?.touched)">
+        <div *ngIf="profileForm.get('age')?.errors?.['required']" class="text-danger">Idade é obrigatória.</div>
+        <div *ngIf="profileForm.get('age')?.hasError('min')" class="text-danger">A idade não pode ser menor que 0.</div>
+        <div *ngIf="profileForm.get('age')?.hasError('max')" class="text-danger">A idade não pode ser maior que 120.</div>
+      </div>
     </div>
     <div class="mb-3">
       <label for="email" class="form-label">E-mail</label>
       <input type="email" class="form-control" id="email" formControlName="email" required placeholder="nome@examplo.com">
+      <div *ngIf="profileForm.get('email')?.invalid && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)">
+        <div *ngIf="profileForm.get('email')?.errors?.['required']" class="text-danger">E-mail é obrigatório.</div>
+        <div *ngIf="profileForm.get('email')?.hasError('maxlength')" class="text-danger">Excedeu o limite de caracteres.</div>
+      </div>
     </div>
     <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="isActive" formControlName="isActive">
@@ -23,10 +40,16 @@
     <div class="mb-3">
       <label for="country" class="form-label">País</label>
       <input type="text" class="form-control" id="country" formControlName="country">
+      <div *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
+        <div *ngIf="profileForm.get('country')?.hasError('maxlength')" class="text-danger">Excedeu o limite de caracteres.</div>
+      </div>
     </div>
     <div class="mb-3">
       <label for="experience" class="form-label">Experiência</label>
       <input type="text" class="form-control" id="experience" formControlName="experience">
+      <div *ngIf="profileForm.get('experience')?.invalid && (profileForm.get('experience')?.dirty || profileForm.get('experience')?.touched)">
+        <div *ngIf="profileForm.get('experience')?.hasError('maxlength')" class="text-danger">Excedeu o limite de caracteres.</div>
+      </div>
     </div>
     <button type="submit" class="btn btn-success" [disabled]="!profileForm.valid">{{id ? 'Editar' : 'Cadastrar'}}</button>
     <button type="button" class="btn btn-secondary ms-2" (click)="cancelar()">Cancelar</button>
