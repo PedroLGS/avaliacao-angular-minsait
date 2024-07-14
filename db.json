@@ -1,16 +1,6 @@
 {
   "profiles": [
     {
-      "id": "1",
-      "name": "Alice",
-      "role": "admin",
-      "age": 32,
-      "email": "alice@example.com",
-      "isActive": true,
-      "country": "USA",
-      "experience": "Senior"
-    },
-    {
       "id": "043a",
       "name": "Alex",
       "role": "Developer",
@@ -31,16 +21,6 @@
       "experience": "Pleno"
     },
     {
-      "id": "c1a5",
-      "name": "Pedro Luiz Gomes Sampaio",
-      "role": "Admin",
-      "age": 21,
-      "email": "pedro@teste.com",
-      "isActive": true,
-      "country": "Brasil",
-      "experience": "Trainee"
-    },
-    {
       "id": "178a",
       "name": "Luiz",
       "role": "Designer",
@@ -49,6 +29,26 @@
       "isActive": false,
       "country": "França",
       "experience": "Senior"
+    },
+    {
+      "id": "5161",
+      "name": "Fernanda",
+      "role": "UI Designer",
+      "age": 23,
+      "email": "fernanda@teste.com",
+      "isActive": false,
+      "country": "Brasil",
+      "experience": "Junior"
+    },
+    {
+      "id": "091b",
+      "name": "Alice",
+      "role": "Analista de Requisitos",
+      "age": 32,
+      "email": "alice@teste.com",
+      "isActive": true,
+      "country": "Brasil",
+      "experience": "Pleno"
     }
   ]
 }
